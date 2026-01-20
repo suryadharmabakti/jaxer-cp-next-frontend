@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff; /* Force light mode background as per design */
+    --foreground: #171717;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+/* Custom Styles from index.html */
+.stat-counter {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  transition: transform 0.3s ease;
+}
+
+.stat-counter:hover {
+  transform: translateY(-5px);
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #0547d6, #0547d6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
