@@ -28,7 +28,7 @@ export default function Portfolio() {
             data-aos-delay="0"
             className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 text-center"
           >
-            <div className="w-20 h-20 mx-auto mb-6 bg-blue-100 rounded-full flex items-center justify-center">
+            <div className="w-20 h-20 mx-auto mb-6 bg-white rounded-full ring-1 ring-gray-200 flex items-center justify-center">
               <img
                 src="img/Qrupi.svg"
                 alt="QRUPI"
@@ -64,7 +64,7 @@ export default function Portfolio() {
             data-aos-delay="200"
             className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 text-center"
           >
-            <div className="w-20 h-20 mx-auto mb-6 bg-blue-200 rounded-full flex items-center justify-center">
+            <div className="w-20 h-20 mx-auto mb-6 bg-white rounded-full ring-1 ring-gray-200 flex items-center justify-center">
               <img
                 src="img/MDN.svg"
                 alt="MDN Tech"
@@ -100,7 +100,7 @@ export default function Portfolio() {
             data-aos-delay="400"
             className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 text-center"
           >
-            <div className="w-20 h-20 mx-auto mb-6 bg-blue-200 rounded-full flex items-center justify-center">
+            <div className="w-20 h-20 mx-auto mb-6 bg-white rounded-full ring-1 ring-gray-200 flex items-center justify-center">
               <img
                 src="img/JAR.svg"
                 alt="JAROLIVA"

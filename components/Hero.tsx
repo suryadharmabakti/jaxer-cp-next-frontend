@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center relative overflow-hidden bg-gradient-to-br from-blue-900 to-purple-800"
+      className="min-h-screen flex items-center relative overflow-hidden bg-[#1414b9]"
     >
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-10 left-10 w-32 h-32 bg-white rounded-full animate-bounce flex items-center justify-center duration-[3000ms]">
@@ -16,7 +16,7 @@ export default function Hero() {
         </div>
         <div
           className="absolute top-40 right-20 w-20 h-20 bg-white rounded-full animate-bounce flex items-center justify-center"
-          style={{ animationDelay: "1s", animationDuration: "4s" }}
+          style={{ animationDelay: "1s", animationDuration: "1s" }}
         >
           <img
             src="img/jaxer.png"
@@ -26,7 +26,7 @@ export default function Hero() {
         </div>
         <div
           className="absolute bottom-20 left-1/4 w-16 h-16 bg-white rounded-full animate-bounce flex items-center justify-center"
-          style={{ animationDelay: "2s", animationDuration: "5s" }}
+          style={{ animationDelay: "2s", animationDuration: "2s" }}
         >
           <img
             src="img/jaxer.png"

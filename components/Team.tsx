@@ -1,6 +1,6 @@
 export default function Team() {
   return (
-    <section id="team" className="py-20">
+    <section id="team" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2
@@ -21,10 +21,10 @@ export default function Team() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-12 justify-items-center">
           {/* Ansari Kadir */}
           <div data-aos="fade-up" data-aos-delay="0" className="text-center">
-            <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center bg-gradient-to-br from-blue-400 to-purple-600">
+            <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center bg-white border border-gray-200 shadow-md">
               <img
                 src="img/ansari kadir.png"
                 alt="Ansari Kadir"
@@ -53,7 +53,7 @@ export default function Team() {
 
           {/* Fuad Pratama */}
           <div data-aos="fade-up" data-aos-delay="200" className="text-center">
-            <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center bg-gradient-to-br from-blue-400 to-purple-600">
+            <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center bg-white border border-gray-200 shadow-md">
               <img
                 src="img/fuad pratama.png"
                 alt="Fuad Pratama"
@@ -82,7 +82,7 @@ export default function Team() {
 
           {/* Fatma Abdullah */}
           <div data-aos="fade-up" data-aos-delay="400" className="text-center">
-            <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center bg-gradient-to-br from-blue-400 to-purple-600">
+            <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center bg-white border border-gray-200 shadow-md">
               <img
                 src="img/fuad pratama.png"
                 alt="Fatma Abdullah"
@@ -108,8 +108,8 @@ export default function Team() {
               </a>
             </div>
           </div>
-
-          {/* Surya Dharma Bakti RM */}
+        
+          {/* Surya Dharma Bakti RM 
           <div data-aos="fade-up" data-aos-delay="600" className="text-center">
             <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center bg-gradient-to-br from-blue-400 to-purple-600">
               <img
@@ -135,8 +135,8 @@ export default function Team() {
                 <i className="fab fa-twitter text-xl"></i>
               </a>
             </div>
-          </div>
-        </div>
+          </div>*/}
+        </div> 
       </div>
     </section>
   );

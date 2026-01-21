@@ -8,7 +8,7 @@ export default function About() {
             className="text-4xl md:text-5xl font-bold text-gray-800 mb-6"
           >
             About{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-red-600">
               Jaxer Grup
             </span>
           </h2>
@@ -68,58 +68,67 @@ export default function About() {
 
         {/* Mission, Vision, Values */}
         <div className="grid md:grid-cols-3 gap-8">
-          <div
-            data-aos="fade-up"
-            data-aos-delay="0"
-            className="text-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
-          >
-            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <i className="fas fa-bullseye text-3xl text-blue-600"></i>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">
-              Our Mission
-            </h3>
-            <p className="text-gray-600 leading-relaxed">
-              To empower businesses and individuals through innovative
-              technology solutions that drive growth, efficiency, and
-              sustainable success in the digital age.
-            </p>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-delay="200"
-            className="text-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
-          >
-            <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <i className="fas fa-eye text-3xl text-purple-600"></i>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">
-              Our Vision
-            </h3>
-            <p className="text-gray-600 leading-relaxed">
-              To be the most trusted and innovative technology partner in
-              Southeast Asia, shaping the future of business through
-              cutting-edge solutions.
-            </p>
-          </div>
-          <div
-            data-aos="fade-up"
-            data-aos-delay="400"
-            className="text-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
-          >
-            <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <i className="fas fa-heart text-3xl text-green-600"></i>
-            </div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">
-              Our Values
-            </h3>
-            <p className="text-gray-600 leading-relaxed">
-              Integrity, Innovation, Excellence, Collaboration, and
-              Customer-centricity guide every decision we make and every
-              solution we deliver.
-            </p>
-          </div>
-        </div>
+  {/* Our Mission */}
+  <div
+    data-aos="fade-up"
+    data-aos-delay="0"
+    className="text-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
+  >
+    <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+      <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" />
+        <circle cx="12" cy="12" r="5" />
+        <circle cx="12" cy="12" r="1" fill="currentColor" />
+      </svg>
+    </div>
+    <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Mission</h3>
+    <p className="text-gray-600 leading-relaxed">
+      To empower businesses and individuals through innovative
+      technology solutions that drive growth, efficiency, and
+      sustainable success in the digital age.
+    </p>
+  </div>
+
+  {/* Our Vision */}
+  <div
+    data-aos="fade-up"
+    data-aos-delay="200"
+    className="text-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
+  >
+    <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+      <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M1.5 12s4.5-7.5 10.5-7.5S22.5 12 22.5 12 18 19.5 12 19.5 1.5 12 1.5 12z"/>
+        <circle cx="12" cy="12" r="3"/>
+      </svg>
+    </div>
+    <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Vision</h3>
+    <p className="text-gray-600 leading-relaxed">
+      To be the most trusted and innovative technology partner in
+      Southeast Asia, shaping the future of business through
+      cutting-edge solutions.
+    </p>
+  </div>
+
+  {/* Our Values */}
+  <div
+    data-aos="fade-up"
+    data-aos-delay="400"
+    className="text-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
+  >
+    <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+      <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 21s-7-4.5-7-10a4 4 0 017-2 4 4 0 017 2c0 5.5-7 10-7 10z"/>
+      </svg>
+    </div>
+    <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Values</h3>
+    <p className="text-gray-600 leading-relaxed">
+      Integrity, Innovation, Excellence, Collaboration, and
+      Customer-centricity guide every decision we make and every
+      solution we deliver.
+    </p>
+  </div>
+</div>
+
       </div>
     </section>
   );

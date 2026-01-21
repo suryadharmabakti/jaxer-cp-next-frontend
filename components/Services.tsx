@@ -1,6 +1,6 @@
 export default function Services() {
   return (
-    <section id="services" className="py-20 bg-gray-50">
+    <section id="services" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2
@@ -30,7 +30,10 @@ export default function Services() {
             className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
           >
             <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-              <i className="fas fa-laptop-code text-3xl text-blue-600"></i>
+              <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 17L9 21h6l-.75-4M4 4h16v10H4z"/>
+</svg>
+
             </div>
             <h3 className="text-xl font-bold text-gray-800 mb-4">
               Technology Solutions
@@ -62,7 +65,10 @@ export default function Services() {
             className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
           >
             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
-              <i className="fas fa-credit-card text-3xl text-green-600"></i>
+              <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M3 7h18M5 11h14M5 15h6"/>
+</svg>
+
             </div>
             <h3 className="text-xl font-bold text-gray-800 mb-4">
               Digital Payments
@@ -93,7 +99,11 @@ export default function Services() {
             className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
           >
             <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
-              <i className="fas fa-chart-line text-3xl text-purple-600"></i>
+              <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M12 12c2.5 0 4-1.5 4-4s-1.5-4-4-4-4 1.5-4 4 1.5 4 4 4z"/>
+  <path strokeLinecap="round" strokeLinejoin="round" d="M6 20c0-3 3-5 6-5s6 2 6 5"/>
+</svg>
+
             </div>
             <h3 className="text-xl font-bold text-gray-800 mb-4">
               Business Consulting
@@ -125,7 +135,11 @@ export default function Services() {
             className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
           >
             <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6">
-              <i className="fas fa-cogs text-3xl text-yellow-600"></i>
+              <svg className="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l4 2"/>
+  <circle cx="12" cy="12" r="10"/>
+</svg>
+
             </div>
             <h3 className="text-xl font-bold text-gray-800 mb-4">
               System Integration
@@ -156,7 +170,10 @@ export default function Services() {
             className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
           >
             <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
-              <i className="fas fa-shield-alt text-3xl text-red-600"></i>
+              <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M12 3l8 4v6c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V7l8-4z"/>
+</svg>
+
             </div>
             <h3 className="text-xl font-bold text-gray-800 mb-4">
               Cybersecurity
@@ -187,7 +204,11 @@ export default function Services() {
             className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2"
           >
             <div className="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
-              <i className="fas fa-graduation-cap text-3xl text-indigo-600"></i>
+              <svg className="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M18 10c0 3-2.7 5-6 5s-6-2-6-5"/>
+  <path strokeLinecap="round" strokeLinejoin="round" d="M4 10V6a8 8 0 0116 0v4"/>
+</svg>
+
             </div>
             <h3 className="text-xl font-bold text-gray-800 mb-4">
               Training & Support

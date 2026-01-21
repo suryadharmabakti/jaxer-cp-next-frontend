@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #f8fafc;
   --foreground: #171717;
 }
 
@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #ffffff; /* Force light mode background as per design */
+    --background: #f8fafc; /* Force light mode background as per design */
     --foreground: #171717;
   }
 }
@@ -51,7 +51,7 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(to right, #0547d6, #0547d6);
+  background: linear-gradient(to right, #2563eb, #282be4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

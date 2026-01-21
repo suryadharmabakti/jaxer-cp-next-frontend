@@ -12,26 +12,7 @@ export default function ClientBehaviors() {
       once: true,
     });
 
-    // Animate Counters
-    const animateCounters = () => {
-      const counters = document.querySelectorAll<HTMLElement>(".stat-counter");
-      counters.forEach((counter) => {
-        const targetText = counter.textContent?.replace(/\D/g, "") ?? "0";
-        const target = parseInt(targetText, 10);
-        const increment = Math.ceil(target / 100);
-        let current = 0;
-        const updateCounter = () => {
-          if (current < target) {
-            current += increment;
-            counter.textContent = `${Math.ceil(current)}+`;
-            setTimeout(updateCounter, 20);
-          } else {
-            counter.textContent = `${target}+`;
-          }
-        };
-        updateCounter();
-      });
-    };
+    // Animate Counters - Logic moved to Stats.tsx component
 
     // Scroll to Top Logic
     const scrollToTopBtn = document.getElementById("scrollToTop");
@@ -67,20 +48,7 @@ export default function ClientBehaviors() {
       });
     });
 
-    // Intersection Observer for Counters
-    const firstCounter = document.querySelector<HTMLElement>(".stat-counter");
-    const statsSection = firstCounter?.closest("section");
-    if (statsSection) {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            animateCounters();
-            observer.disconnect();
-          }
-        });
-      });
-      observer.observe(statsSection);
-    }
+    // Intersection Observer for Counters - logic now handled inside Stats.tsx
 
     return () => {
       window.removeEventListener("scroll", updateScrollTop);
