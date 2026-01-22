@@ -5,16 +5,11 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* theme variables are defined in :root for broad compatibility */
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #f8fafc; /* Force light mode background as per design */
+    --background: #f8fafc;
     --foreground: #171717;
   }
 }
@@ -24,9 +19,7 @@ body {
   color: var(--foreground);
 }
 
-/* Custom Styles from index.html */
 .stat-counter {
-  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
   transition: transform 0.3s ease;
 }
 
@@ -52,6 +45,7 @@ body {
 
 .gradient-text {
   background: linear-gradient(to right, #2563eb, #282be4);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

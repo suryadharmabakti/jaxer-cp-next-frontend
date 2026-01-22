@@ -8,8 +8,8 @@ export default function About() {
             className="text-4xl md:text-5xl font-bold text-gray-800 mb-6"
           >
             About{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-red-600">
-              Jaxer Grup
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-blue-600">
+              Jaxer Grup Indonesia
             </span>
           </h2>
           <p
