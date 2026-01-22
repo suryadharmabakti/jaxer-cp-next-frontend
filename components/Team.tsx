@@ -8,7 +8,7 @@ export default function Team() {
             className="text-4xl md:text-5xl font-bold text-gray-800 mb-6"
           >
             Our{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-blue-600">
               Leadership
             </span>
           </h2>

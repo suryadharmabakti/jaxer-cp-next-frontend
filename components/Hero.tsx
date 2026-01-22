@@ -41,7 +41,7 @@ export default function Hero() {
           className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
         >
           Jaxer Grup
-          <span className="block text-yellow-400">Indonesia</span>
+          <span className="block text-white">Indonesia</span>
         </h1>
         <p
           data-aos="fade-up"

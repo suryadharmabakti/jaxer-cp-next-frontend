@@ -1,4 +1,40 @@
+"use client";
+import { useState } from "react";
+
 export default function Contact() {
+  const [status, setStatus] = useState<"success" | "error" | null>(null);
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget as HTMLFormElement;
+    const formData = new FormData(form);
+    const payload = {
+      name: String(formData.get("name") || ""),
+      email: String(formData.get("email") || ""),
+      subject: String(formData.get("subject") || ""),
+      message: String(formData.get("message") || ""),
+      _captcha: "false",
+      _template: "table",
+      _subject: String(formData.get("subject") || "New Message from Website"),
+    };
+    try {
+      const res = await fetch("https://formsubmit.co/ajax/itsupport@jaxergrup.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+      if (res.ok) {
+        setStatus("success");
+        form.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  };
   return (
     <section id="contact" className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -8,7 +44,7 @@ export default function Contact() {
             className="text-4xl md:text-5xl font-bold text-gray-800 mb-6"
           >
             Get in{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-blue-600">
               Touch
             </span>
           </h2>
@@ -72,7 +108,7 @@ export default function Contact() {
         </div>
         <div>
           <h4 className="text-lg font-semibold text-gray-800">Email</h4>
-          <p className="text-gray-600">corporate@jaxer.id</p>
+          <p className="text-gray-600">itsupport@jaxergrup.com</p>
         </div>
       </div>
 
@@ -131,7 +167,20 @@ export default function Contact() {
             <h3 className="text-2xl font-bold text-gray-800 mb-6">
               Send us a Message
             </h3>
-            <form className="space-y-6">
+            {status === "success" && (
+              <div className="mb-4 rounded-lg bg-green-100 text-green-700 px-4 py-3">
+                Message sent successfully
+              </div>
+            )}
+            {status === "error" && (
+              <div className="mb-4 rounded-lg bg-red-100 text-red-700 px-4 py-3">
+                Failed to send message. Please try again.
+              </div>
+            )}
+            <form
+              className="space-y-6"
+              onSubmit={handleSubmit}
+            >
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label
@@ -143,8 +192,10 @@ export default function Contact() {
                   <input
                     type="text"
                     id="name"
+                    name="name"
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition duration-300"
-                    placeholder="John Doe"
+                    placeholder="Ringgo"
+                    required
                   />
                 </div>
                 <div>
@@ -157,8 +208,10 @@ export default function Contact() {
                   <input
                     type="email"
                     id="email"
+                    name="email"
                     className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition duration-300"
-                    placeholder="john@example.com"
+                    placeholder="Ringgo@contoh.com"
+                    required
                   />
                 </div>
               </div>
@@ -173,8 +226,10 @@ export default function Contact() {
                 <input
                   type="text"
                   id="subject"
+                  name="subject"
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition duration-300"
-                  placeholder="How can we help?"
+                  placeholder="Pelaporan"
+                  required
                 />
               </div>
 
@@ -188,14 +243,16 @@ export default function Contact() {
                 <textarea
                   id="message"
                   rows={4}
+                  name="message"
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition duration-300"
-                  placeholder="Your message here..."
+                  placeholder="Pesan Kamu di sini yaw..."
+                  required
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300"
+                className="w-full bg-gradient-to-r from-blue-800 to-blue-600 text-white font-bold py-4 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-300"
               >
                 Send Message
               </button>

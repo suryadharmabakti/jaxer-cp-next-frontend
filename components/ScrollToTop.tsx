@@ -25,13 +25,27 @@ export default function ScrollToTop() {
   };
 
   return (
-    <button
-      onClick={scrollToTop}
-      className={`fixed bottom-8 right-8 bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center hover:bg-blue-700 transition duration-300 z-50 ${
-        isVisible ? "opacity-100 visible" : "opacity-0 invisible"
-      }`}
+  <button
+    onClick={scrollToTop}
+    className={`fixed bottom-8 right-8 bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center hover:bg-blue-700 transition duration-300 z-50 ${
+      isVisible ? "opacity-100 visible" : "opacity-0 invisible"
+    }`}
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-6 h-6"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={2}
     >
-      <i className="fas fa-arrow-up"></i>
-    </button>
-  );
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M5 15l7-7 7 7"
+      />
+    </svg>
+  </button>
+);
+
 }

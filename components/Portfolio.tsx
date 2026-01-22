@@ -8,7 +8,7 @@ export default function Portfolio() {
             className="text-4xl md:text-5xl font-bold text-gray-800 mb-6"
           >
             Our{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-blue-600">
               Subsidiaries
             </span>
           </h2>
@@ -41,10 +41,10 @@ export default function Portfolio() {
               transactions across Indonesia.
             </p>
             <div className="flex justify-center space-x-4 mb-6">
-              <span className="bg-blue-100 text-gray-800 px-3 py-1 rounded-full text-sm">
+              <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
                 FinTech
               </span>
-              <span className="bg-blue-100 text-gray-800 px-3 py-1 rounded-full text-sm">
+              <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
                 Payments
               </span>
             </div>
@@ -52,10 +52,10 @@ export default function Portfolio() {
               href="https://www.qrupi.id/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-300 inline-block"
+              className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300 inline-block"
             >
               Visit Website
-            </a>
+            </a>  
           </div>
 
           {/* MDN Tech */}
@@ -77,10 +77,10 @@ export default function Portfolio() {
               software and hardware integration.
             </p>
             <div className="flex justify-center space-x-4 mb-6">
-              <span className="bg-blue-200 text-gray-800 px-3 py-1 rounded-full text-sm">
+              <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
                 Technology
               </span>
-              <span className="bg-blue-200 text-gray-800 px-3 py-1 rounded-full text-sm">
+              <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
                 Hardware
               </span>
             </div>
@@ -88,7 +88,7 @@ export default function Portfolio() {
               href="https://mdnindonesia.co.id/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition duration-300 inline-block"
+              className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300 inline-block"
             >
               Visit Website
             </a>
@@ -98,7 +98,7 @@ export default function Portfolio() {
           <div
             data-aos="fade-up"
             data-aos-delay="400"
-            className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 text-center"
+            className="bg-white-600 p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 text-center"
           >
             <div className="w-20 h-20 mx-auto mb-6 bg-white rounded-full ring-1 ring-gray-200 flex items-center justify-center">
               <img
@@ -107,16 +107,16 @@ export default function Portfolio() {
                 className="w-12 h-12 object-contain"
               />
             </div>
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">JAROLIVA</h3>
-            <p className="text-gray-600 mb-6">
+            <h3 className="text-2xl font-bold text-blue mb-4">JAROLIVA</h3>
+            <p className="text-blue mb-6">
               Premium olive oil and gourmet food products bringing international
               quality to Indonesian markets.
             </p>
             <div className="flex justify-center space-x-4 mb-6">
-              <span className="bg-blue-200 text-gray-800 px-3 py-1 rounded-full text-sm">
+              <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
                 Food & Beverage
               </span>
-              <span className="bg-blue-200 text-gray-800 px-3 py-1 rounded-full text-sm">
+              <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
                 Premium
               </span>
             </div>
@@ -124,7 +124,7 @@ export default function Portfolio() {
               href="https://jaxlab.id/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-200 text-white px-6 py-3 rounded-full hover:bg-yellow-700 transition duration-300 inline-block"
+              className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300 inline-block"
             >
               Visit Website
             </a>
