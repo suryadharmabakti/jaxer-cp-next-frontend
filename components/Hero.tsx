@@ -48,8 +48,8 @@ export default function Hero() {
           data-aos-delay="200"
           className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90"
         >
-          Leading innovation in technology, finance, and business solutions across
-          Indonesia and Southeast Asia
+          Leading innovation in technology and business solutions across
+          Indonesia.
         </p>
         <div
           data-aos="fade-up"

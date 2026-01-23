@@ -37,8 +37,7 @@ export default function Portfolio() {
             </div>
             <h3 className="text-2xl font-bold text-gray-800 mb-4">QRUPI</h3>
             <p className="text-gray-600 mb-6">
-              Revolutionary digital payment solution enabling seamless QR code
-              transactions across Indonesia.
+              QRUPI is a digital platform designed to enhance communication and collaboration between schools, teachers, and parents. The platform provides various features to support teaching and learning processes, reporting.
             </p>
             <div className="flex justify-center space-x-4 mb-6">
               <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
