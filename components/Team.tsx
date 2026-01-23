@@ -26,7 +26,7 @@ export default function Team() {
           <div data-aos="fade-up" data-aos-delay="0" className="text-center">
             <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center bg-white border border-gray-200 shadow-md">
               <img
-                src="img/ansari kadir.png"
+                src="img/pict.png"
                 alt="Ansari Kadir"
                 className="w-full h-full object-cover"
               />

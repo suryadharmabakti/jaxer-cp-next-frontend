@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
 import About from "@/components/About";
-import Services from "@/components/Services";
+import Gallery from "@/components/Gallery";
 import Portfolio from "@/components/Portfolio";
 import Team from "@/components/Team";
 import Contact from "@/components/Contact";
@@ -16,7 +16,7 @@ export default function HomePage() {
       <Hero />
       <Stats />
       <About />
-      <Services />
+      <Gallery />
       <Portfolio />
       <Team />
       <Contact />

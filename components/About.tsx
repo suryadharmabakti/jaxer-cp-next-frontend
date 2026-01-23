@@ -17,9 +17,12 @@ export default function About() {
             data-aos-delay="200"
             className="text-xl text-gray-600 max-w-3xl mx-auto"
           >
-            Founded in 2008, Jaxer Grup Indonesia has emerged as a leading
-            technology and business solutions provider, transforming industries
-            through innovation and excellence.
+            
+            PT Jaxer Group Indonesia is a company in the
+            field of Information and Communication
+            Technology (ICT) that focuses on IT hardware
+            production and the development of digital
+            education systems.
           </p>
         </div>
 
@@ -32,18 +35,18 @@ export default function About() {
             />
           </div>
           <div data-aos="fade-left">
-            <h3 className="text-3xl font-bold text-gray-800 mb-6">Our Story</h3>
+            <h3 className="text-3xl font-bold text-gray-800 mb-6">Welcome to PT Jaxer Grup Indonesia</h3>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Jaxer Grup Indonesia began as a vision to bridge the gap between
-              technology and business needs in the Indonesian market. What
-              started as a small technology consultancy has evolved into a
-              comprehensive business solutions provider.
+              We are proud to be part of Indonesia's digital transformation by delivering
+              innovative, reliable, and affordable technology solutions. Driven by the
+              vision to Empower Indonesia's Digital Future, we are committed to
+              supporting society and the education sector through high-quality
+              products designed domestically.
             </p>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              Today, we operate multiple subsidiaries including QRUPI (digital
-              payments), MDN Tech (technology solutions), and JAR (premium
-              products), each leading their respective markets with innovative
-              solutions.
+              We believe that with the right technology, we can build a future generation
+              that is more advanced and ready to face global challenges. Thank you for
+              trusting PT Jaxer Group Indonesia. Together, let us create a better future!
             </p>
             <div className="grid grid-cols-2 gap-4">
               <div className="text-center p-4 bg-blue-50 rounded-lg">
@@ -82,11 +85,18 @@ export default function About() {
       </svg>
     </div>
     <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Mission</h3>
-    <p className="text-gray-600 leading-relaxed">
-      To empower businesses and individuals through innovative
-      technology solutions that drive growth, efficiency, and
-      sustainable success in the digital age.
-    </p>
+    <ul className="text-gray-600 leading-relaxed list-disc pl-5 space-y-2">
+  <li>Providing innovative, reliable, and affordable IT solutions.</li>
+  <li>
+    Supporting Indonesia&apos;s digital transformation through
+    high-quality local technology.
+  </li>
+  <li>
+    Contributing to improving the quality of education with innovative
+    technology and learning systems.
+  </li>
+</ul>
+
   </div>
 
   {/* Our Vision */}
@@ -103,9 +113,7 @@ export default function About() {
     </div>
     <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Vision</h3>
     <p className="text-gray-600 leading-relaxed">
-      To be the most trusted and innovative technology partner in
-      Southeast Asia, shaping the future of business through
-      cutting-edge solutions.
+      Empowering Indonesia's Digital Future
     </p>
   </div>
 
@@ -122,9 +130,7 @@ export default function About() {
     </div>
     <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Values</h3>
     <p className="text-gray-600 leading-relaxed">
-      Integrity, Innovation, Excellence, Collaboration, and
-      Customer-centricity guide every decision we make and every
-      solution we deliver.
+      Inovation, Sustainability, Collaboration, Dedication to Education.
     </p>
   </div>
 </div>

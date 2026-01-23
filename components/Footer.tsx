@@ -1,4 +1,37 @@
+"use client";
+import { useState } from "react";
+
 export default function Footer() {
+  const [status, setStatus] = useState<"success" | "error" | null>(null);
+  const handleSubscribe = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget as HTMLFormElement;
+    const formData = new FormData(form);
+    const payload = {
+      email: String(formData.get("email") || ""),
+      _subject: "New Newsletter Subscription",
+      _template: "table",
+      _captcha: "false",
+    };
+    try {
+      const res = await fetch("https://formsubmit.co/ajax/itsupport@jaxergrup.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+      if (res.ok) {
+        setStatus("success");
+        form.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  };
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -115,11 +148,23 @@ export default function Footer() {
             <p className="text-gray-400 mb-4">
               Subscribe to our newsletter for latest updates.
             </p>
-            <form className="space-y-4">
+            {status === "success" && (
+              <div className="mb-4 rounded-lg bg-green-100 text-green-700 px-4 py-3">
+                Subscription sent successfully
+              </div>
+            )}
+            {status === "error" && (
+              <div className="mb-4 rounded-lg bg-red-100 text-red-700 px-4 py-3">
+                Failed to send subscription. Please try again.
+              </div>
+            )}
+            <form className="space-y-4" onSubmit={handleSubscribe}>
               <input
                 type="email"
+                name="email"
                 placeholder="Your Email"
                 className="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:border-blue-500 focus:outline-none"
+                required
               />
               <button
                 type="submit"
@@ -133,7 +178,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-400">
-            &copy; 2024 Jaxer Grup Indonesia. All Rights Reserved.
+            &copy; 2024 Jaxer Grup Indonesia. 
           </p>
         </div>
       </div>
