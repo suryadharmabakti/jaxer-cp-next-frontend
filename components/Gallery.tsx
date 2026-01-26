@@ -49,11 +49,6 @@ export default function GalleryPage() {
                 <h3 className="text-xl font-bold text-gray-800 mt-6">
                   {item.title}
                 </h3>
-                <div className="flex justify-start space-x-3 mt-4">
-                  <span className="bg-blue-200 text-gray-800 px-3 py-1 rounded-full text-sm">
-                    {item.tag}
-                  </span>
-                </div>
               </div>
             ))}
           </div>

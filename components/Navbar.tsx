@@ -53,16 +53,6 @@ export default function Navbar() {
                 {item.name}
               </a>
             ))}
-            <Link
-              href="/"
-              className={`px-6 py-2 rounded-full transition duration-300 ${
-                isScrolled
-                  ? "bg-blue-600 text-white hover:bg-blue-700"
-                  : "bg-white text-blue-600 hover:bg-gray-100"
-              }`}
-            >
-              Main Site
-            </Link>
           </div>
           <button
             onClick={() => setOpen(!open)}

@@ -1,4 +1,13 @@
+"use client";
+import { useState } from "react";
+
 export default function Team() {
+  const [selected, setSelected] = useState<{
+    src: string;
+    name: string;
+    role: string;
+    desc: string;
+  } | null>(null);
   return (
     <section id="team" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -24,7 +33,18 @@ export default function Team() {
         <div className="grid md:grid-cols-3 gap-12 justify-items-center">
           {/* Ansari Kadir */}
           <div data-aos="fade-up" data-aos-delay="0" className="text-center">
-            <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center bg-white border border-gray-200 shadow-md">
+            <div
+              className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center bg-white border border-gray-200 shadow-md cursor-pointer"
+              onClick={() =>
+                setSelected({
+                  src: "img/pict.png",
+                  name: "Ansari Kadir",
+                  role: "Chief Executive Officer",
+                  desc:
+                    "Leading strategic vision and company growth with 20+ years in technology",
+                })
+              }
+            >
               <img
                 src="img/pict.png"
                 alt="Ansari Kadir"
@@ -53,7 +73,18 @@ export default function Team() {
 
           {/* Fuad Pratama */}
           <div data-aos="fade-up" data-aos-delay="200" className="text-center">
-            <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center bg-white border border-gray-200 shadow-md">
+            <div
+              className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center bg-white border border-gray-200 shadow-md cursor-pointer"
+              onClick={() =>
+                setSelected({
+                  src: "img/fuad pratama.png",
+                  name: "Fuad Pratama",
+                  role: "General Manager Business Development",
+                  desc:
+                    "Driving technical innovation and overseeing product development initiatives",
+                })
+              }
+            >
               <img
                 src="img/fuad pratama.png"
                 alt="Fuad Pratama"
@@ -82,7 +113,18 @@ export default function Team() {
 
           {/* Fatma Abdullah */}
           <div data-aos="fade-up" data-aos-delay="400" className="text-center">
-            <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center bg-white border border-gray-200 shadow-md">
+            <div
+              className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center bg-white border border-gray-200 shadow-md cursor-pointer"
+              onClick={() =>
+                setSelected({
+                  src: "img/fuad pratama.png",
+                  name: "Fatma Abdullah",
+                  role: "Chief Financial Officer",
+                  desc:
+                    "Managing financial strategy and ensuring sustainable business growth",
+                })
+              }
+            >
               <img
                 src="img/fuad pratama.png"
                 alt="Fatma Abdullah"
@@ -138,6 +180,35 @@ export default function Team() {
           </div>*/}
         </div> 
       </div>
+      {selected && (
+        <div
+          className="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4"
+          onClick={() => setSelected(null)}
+        >
+          <div
+            className="relative max-w-3xl w-full bg-white rounded-2xl shadow-2xl p-4"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              src={selected.src}
+              alt={selected.name}
+              className="w-full h-full max-h-[70vh] object-contain rounded-xl border border-gray-200"
+            />
+            <div className="mt-4">
+              <h4 className="text-lg font-semibold text-gray-900">{selected.name}</h4>
+              <p className="text-blue-600 font-semibold">{selected.role}</p>
+              <p className="text-gray-700 mt-2">{selected.desc}</p>
+            </div>
+            <button
+              type="button"
+              onClick={() => setSelected(null)}
+              className="absolute -top-3 -right-3 bg-white text-gray-900 rounded-full shadow px-3 py-1"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
