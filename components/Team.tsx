@@ -26,7 +26,7 @@ export default function Team() {
             data-aos-delay="200"
             className="text-xl text-gray-600 max-w-3xl mx-auto"
           >
-            Meet the visionaries driving innovation at Jaxer Grup Indonesia
+            Meet the visionaries driving innovation at Jaxer Teknologi Indonesia
           </p>
         </div>
 

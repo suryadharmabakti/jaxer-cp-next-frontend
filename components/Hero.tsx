@@ -10,7 +10,7 @@ export default function Hero() {
         <div className="absolute top-10 left-10 w-32 h-32 bg-white rounded-full animate-bounce flex items-center justify-center duration-[3000ms]">
           <img
             src="img/jaxer.png"
-            alt="Jaxer Grup Indonesia"
+            alt="Jaxer Teknologi Indonesia"
             className="h-20 w-20 object-contain"
           />
         </div>
@@ -20,7 +20,7 @@ export default function Hero() {
         >
           <img
             src="img/jaxer.png"
-            alt="Jaxer Grup Indonesia"
+            alt="Jaxer Teknologi Indonesia"
             className="h-12 w-12 object-contain"
           />
         </div>
@@ -30,7 +30,7 @@ export default function Hero() {
         >
           <img
             src="img/jaxer.png"
-            alt="Jaxer Grup Indonesia"
+            alt="Jaxer Teknologi Indonesia"
             className="h-10 w-10 object-contain"
           />
         </div>
@@ -40,7 +40,7 @@ export default function Hero() {
           data-aos="fade-up"
           className="text-5xl md:text-7xl font-bold mb-6 leading-tight"
         >
-          Jaxer Grup
+          Jaxer Teknologi
           <span className="block text-white">Indonesia</span>
         </h1>
         <p

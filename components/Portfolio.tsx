@@ -17,7 +17,7 @@ export default function Portfolio() {
             data-aos-delay="200"
             className="text-xl text-gray-600 max-w-3xl mx-auto"
           >
-            Leading brands under the Jaxer Grup Indonesia umbrella
+            Leading brands under the Jaxer Teknologi Indonesia umbrella
           </p>
         </div>
 

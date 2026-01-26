@@ -9,7 +9,7 @@ export default function About() {
           >
             About{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-blue-600">
-              Jaxer Grup Indonesia
+              Jaxer Teknologi Indonesia
             </span>
           </h2>
           <p
@@ -18,7 +18,7 @@ export default function About() {
             className="text-xl text-gray-600 max-w-3xl mx-auto"
           >
             
-            PT Jaxer Group Indonesia is a company in the
+            PT Jaxer Teknologi Indonesia is a company in the
             field of Information and Communication
             Technology (ICT) that focuses on IT hardware
             production and the development of digital
@@ -35,7 +35,7 @@ export default function About() {
             />
           </div>
           <div data-aos="fade-left">
-            <h3 className="text-3xl font-bold text-gray-800 mb-6">Welcome to PT Jaxer Grup Indonesia</h3>
+            <h3 className="text-3xl font-bold text-gray-800 mb-6">Welcome to PT Jaxer Teknologi Indonesia</h3>
             <p className="text-gray-600 mb-6 leading-relaxed">
               We are proud to be part of Indonesia's digital transformation by delivering
               innovative, reliable, and affordable technology solutions. Driven by the

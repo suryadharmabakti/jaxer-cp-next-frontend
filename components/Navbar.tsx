@@ -26,7 +26,7 @@ export default function Navbar() {
           <div className="flex items-center">
             <img
               src="img/jti.png" 
-              alt="Jaxer Grup Indonesia"
+              alt="Jaxer Teknologi Indonesia"
               className={`h-15 w-auto transition-all duration-300 ${
                 isScrolled ? "" : "brightness-0 invert"
               }`}

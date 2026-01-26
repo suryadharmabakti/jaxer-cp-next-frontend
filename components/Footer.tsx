@@ -40,7 +40,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <img
               src="img/jti.png"
-              alt="Jaxer Grup"
+              alt="Jaxer Teknologi Indonesia"
               className="h-15 mb-6 brightness-0 invert"
             />
             <p className="text-gray-400 mb-6 max-w-sm">
@@ -178,7 +178,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center">
           <p className="text-gray-400">
-            &copy; 2024 Jaxer Grup Indonesia. 
+            &copy; {new Date().getFullYear()} Jaxer Teknologi Indonesia.  
           </p>
         </div>
       </div>
