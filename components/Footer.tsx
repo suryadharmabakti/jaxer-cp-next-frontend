@@ -120,7 +120,7 @@ export default function Footer() {
                   href="#portfolio"
                   className="text-gray-400 hover:text-white transition duration-300"
                 >
-                  Subsidiaries
+                  Porotfolio
                 </a>
               </li>
               <li>

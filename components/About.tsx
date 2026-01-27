@@ -85,8 +85,11 @@ export default function About() {
       </svg>
     </div>
     <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Mission</h3>
-    <ul className="text-gray-600 leading-relaxed list-disc pl-5 space-y-2">
-  <li>Providing innovative, reliable, and affordable IT solutions.</li>
+
+<ul className="text-gray-600 leading-relaxed space-y-2 text-justify">
+  <li>
+    Providing innovative, reliable, and affordable IT solutions.
+  </li>
   <li>
     Supporting Indonesia&apos;s digital transformation through
     high-quality local technology.
@@ -96,6 +99,8 @@ export default function About() {
     technology and learning systems.
   </li>
 </ul>
+
+
 
   </div>
 
@@ -112,6 +117,9 @@ export default function About() {
       </svg>
     </div>
     <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Vision</h3>
+    <ul className="text-gray-600 leading-relaxed  pl-5 space-y-2 text-justify">
+
+    </ul>
     <p className="text-gray-600 leading-relaxed">
       Empowering Indonesia's Digital Future
     </p>
@@ -129,6 +137,9 @@ export default function About() {
       </svg>
     </div>
     <h3 className="text-2xl font-bold text-gray-800 mb-4">Our Values</h3>
+    <ul className="text-gray-600 leading-relaxed list-disc pl-5 space-y-2 text-justify">
+
+    </ul>
     <p className="text-gray-600 leading-relaxed">
       Inovation, Sustainability, Collaboration, Dedication to Education.
     </p>

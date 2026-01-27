@@ -9,7 +9,7 @@ export default function Portfolio() {
           >
             Our{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-blue-600">
-              Subsidiaries
+              Portofolio
             </span>
           </h2>
           <p
@@ -26,7 +26,7 @@ export default function Portfolio() {
           <div
             data-aos="fade-up"
             data-aos-delay="0"
-            className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 text-center"
+            className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 text-center h-full flex flex-col"
           >
             <div className="w-20 h-20 mx-auto mb-6 bg-white rounded-full ring-1 ring-gray-200 flex items-center justify-center">
               <img
@@ -36,22 +36,25 @@ export default function Portfolio() {
               />
             </div>
             <h3 className="text-2xl font-bold text-gray-800 mb-4">QRUPI</h3>
-            <p className="text-gray-600 mb-6">
+            <div className="flex justify-center gap-2 mb-4">
+              <span className="border border-blue-600 text-blue-600 px-2 py-0.5 rounded-full text-xs">
+                FinTech
+              </span>
+              <span className="border border-blue-600 text-blue-600 px-2 py-0.5 rounded-full text-xs">
+                Payments
+              </span>
+            </div>
+            <p className="text-gray-600 mb-6 text-justify">
               QRUPI is a digital platform designed to enhance communication and collaboration between schools, teachers, and parents. The platform provides various features to support teaching and learning processes, reporting.
             </p>
             <div className="flex justify-center space-x-4 mb-6">
-              <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
-                FinTech
-              </span>
-              <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
-                Payments
-              </span>
+             
             </div>
             <a
               href="https://www.qrupi.id/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300 inline-block"
+              className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300 inline-block mt-auto"
             >
               Visit Website
             </a>  
@@ -61,7 +64,7 @@ export default function Portfolio() {
           <div
             data-aos="fade-up"
             data-aos-delay="200"
-            className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 text-center"
+            className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 text-center h-full flex flex-col"
           >
             <div className="w-20 h-20 mx-auto mb-6 bg-white rounded-full ring-1 ring-gray-200 flex items-center justify-center">
               <img
@@ -71,23 +74,26 @@ export default function Portfolio() {
               />
             </div>
             <h3 className="text-2xl font-bold text-gray-800 mb-4">MDN Tech</h3>
-            <p className="text-gray-600 mb-6">
+            <div className="flex justify-center gap-2 mb-4">
+              <span className="border border-blue-600 text-blue-600 px-2 py-0.5 rounded-full text-xs">
+                Technology
+              </span>
+              <span className="border border-blue-600 text-blue-600 px-2 py-0.5 rounded-full text-xs">
+                Hardware
+              </span>
+            </div>
+            <p className="text-gray-600 mb-6 text-justify">
               Advanced technology solutions provider specializing in enterprise
               software and hardware integration.
             </p>
             <div className="flex justify-center space-x-4 mb-6">
-              <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
-                Technology
-              </span>
-              <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
-                Hardware
-              </span>
+             
             </div>
             <a
               href="https://mdnindonesia.co.id/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300 inline-block"
+              className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300 inline-block mt-auto"
             >
               Visit Website
             </a>
@@ -97,7 +103,7 @@ export default function Portfolio() {
           <div
             data-aos="fade-up"
             data-aos-delay="400"
-            className="bg-white-600 p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 text-center"
+            className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 text-center h-full flex flex-col"
           >
             <div className="w-20 h-20 mx-auto mb-6 bg-white rounded-full ring-1 ring-gray-200 flex items-center justify-center">
               <img
@@ -107,23 +113,26 @@ export default function Portfolio() {
               />
             </div>
             <h3 className="text-2xl font-bold text-blue mb-4">JAROLIVA</h3>
-            <p className="text-blue mb-6">
+            <div className="flex justify-center gap-2 mb-4">
+              <span className="border border-blue-600 text-blue-600 px-2 py-0.5 rounded-full text-xs">
+                Food & Beverage
+              </span>
+              <span className="border border-blue-600 text-blue-600 px-2 py-0.5 rounded-full text-xs">
+                Premium
+              </span>
+            </div>
+            <p className="text-gray-600 mb-6 text-justify">
               Premium olive oil and gourmet food products bringing international
               quality to Indonesian markets.
             </p>
             <div className="flex justify-center space-x-4 mb-6">
-              <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
-                Food & Beverage
-              </span>
-              <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
-                Premium
-              </span>
+             
             </div>
             <a
               href="https://jaxlab.id/"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300 inline-block"
+              className="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300 inline-block mt-auto"
             >
               Visit Website
             </a>
