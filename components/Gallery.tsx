@@ -94,26 +94,23 @@ export default function GalleryPage() {
           </div>
 
           {/* Carousel */}
-          <div className="relative w-full">
+          <div className="relative w-full mb-16">
             {/* Carousel wrapper */}
             <div className="relative h-56 md:h-96 lg:h-[500px] overflow-hidden rounded-2xl shadow-xl bg-gray-100">
               {items.map((item, idx) => (
                 <div
-                  key={`${item.src}-${idx}`}
+                  key={`carousel-${item.src}-${idx}`}
                   className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-                    currentSlide === idx ? "opacity-100" : "opacity-0"
+                    currentSlide === idx ? "opacity-100" : "opacity-0 pointer-events-none"
                   }`}
                 >
                   <div className="relative w-full h-full">
                     <img
                       src={encodeURI(item.src)}
                       alt={item.title}
-                      className="w-full h-full object-contain cursor-pointer transition-transform duration-300 hover:scale-105"
+                      className="gallery-image w-full h-full object-contain cursor-pointer"
                       onClick={() => setSelected(item)}
                       loading="lazy"
-                      onError={(e) => {
-                        (e.target as HTMLImageElement).src = '/img/pict.png';
-                      }}
                     />
                   </div>
                   {/* Overlay with title */}
@@ -199,142 +196,34 @@ export default function GalleryPage() {
               </span>
             </button>
           </div>
+
+          {/* Grid Gallery - All Photos */}
         </div>
       </section>
 
-      {/* Modal - Full Size Image */}
+      {/* The Modal */}
       {selected && (
-        <div
-          style={{
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            backgroundColor: 'rgba(0, 0, 0, 0.95)',
-            zIndex: 9999,
-            display: 'flex',
-            flexDirection: 'column',
-            overflow: 'hidden'
-          }}
-          onClick={() => setSelected(null)}
-        >
-          {/* Header with title and close button */}
-          <div style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'flex-start',
-            padding: '1rem 1.5rem',
-            backgroundColor: 'rgba(0, 0, 0, 0.5)',
-            borderBottom: '1px solid rgba(255, 255, 255, 0.25)',
-            flexShrink: 0
-          }}>
-            <div style={{ flex: 1, marginRight: '1rem' }}>
-              <h3 style={{ 
-                fontSize: '1.25rem', 
-                fontWeight: 'bold', 
-                color: 'white',
-                marginBottom: '0.25rem'
-              }}>
-                {selected.title}
-              </h3>
-              {selected.desc && (
-                <p style={{ 
-                  fontSize: '0.875rem', 
-                  color: 'rgba(255, 255, 255, 0.7)' 
-                }}>
-                  {selected.desc}
-                </p>
-              )}
-            </div>
-            
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                setSelected(null);
-              }}
-              style={{
-                backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                color: 'white',
-                border: 'none',
-                borderRadius: '50%',
-                width: '2.5rem',
-                height: '2.5rem',
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                flexShrink: 0,
-                transition: 'all 0.2s'
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.28)';
-                e.currentTarget.style.transform = 'scale(1.1)';
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.29)';
-                e.currentTarget.style.transform = 'scale(1)';
-              }}
-            >
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-          </div>
-
-          {/* Image Container - FIX: Bagian yang hilang */}
-          <div 
-            style={{
-              flex: 1,
-              overflow: 'auto',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              padding: '1rem'
-            }}
+        <div className="modal" onClick={() => setSelected(null)}>
+          {/* The Close Button */}
+          <span className="close" onClick={() => setSelected(null)}>&times;</span>
+          
+          {/* Modal Content (The Image) */}
+          <img 
+            className="modal-content" 
+            src={encodeURI(selected.src)} 
+            alt={selected.title}
             onClick={(e) => e.stopPropagation()}
-          >
-            <img
-              src={encodeURI(selected.src)}
-              alt={selected.title}
-              style={{
-                display: 'block',
-                maxWidth: '100%',
-                maxHeight: '100%',
-                width: 'auto',
-                height: 'auto',
-                objectFit: 'contain',
-                borderRadius: '0.5rem',
-                boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)'
-              }}
-              onLoad={() => console.log('✅ Image loaded:', selected.src)}
-              onError={(e) => {
-                const img = e.target as HTMLImageElement;
-                img.src = '/img/pict.png'; // Fallback image
-              }}
-            />
-          </div>
-
-          {/* Footer */}
-          <div style={{
-            textAlign: 'center',
-            padding: '0.75rem',
-            backgroundColor: 'rgba(0, 0, 0, 0.5)',
-            borderTop: '1px solid rgba(255, 255, 255, 0.27)',
-            flexShrink: 0
-          }}>
-            <p style={{ 
-              color: 'rgba(156, 163, 175, 0.66)', 
-              fontSize: '0.75rem' 
-            }}>
-              <span style={{ display: 'inline-block', margin: '0 0.5rem' }}>🖱️ Klik di luar untuk menutup</span>
-              <span style={{ display: 'inline-block', margin: '0 0.5rem' }}>⌨️ Tekan ESC</span>
-            </p>
+            onError={(e) => {
+              (e.target as HTMLImageElement).src = '/img/pict.png';
+            }}
+          />
+          
+          {/* Modal Caption (Image Text) */}
+          <div id="caption">
+            <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '0.5rem' }}>
+              {selected.title}
+            </h3>
+            {selected.desc && <p>{selected.desc}</p>}
           </div>
         </div>
       )}
@@ -347,23 +236,119 @@ export default function GalleryPage() {
           overflow: hidden;
         }
 
-        /* Custom scrollbar for modal */
-        div[style*="overflow: auto"]::-webkit-scrollbar {
-          width: 8px;
-          height: 8px;
+        /* Gallery Image Hover Effect */
+        .gallery-image {
+          transition: 0.3s;
         }
 
-        div[style*="overflow: auto"]::-webkit-scrollbar-track {
-          background: rgba(0, 0, 0, 0.3);
+        .gallery-image:hover {
+          opacity: 0.7;
         }
 
-        div[style*="overflow: auto"]::-webkit-scrollbar-thumb {
-          background: rgba(255, 255, 255, 0.23);
-          border-radius: 4px;
+        /* Gallery Card */
+        .gallery-card {
+          transition: all 0.3s ease;
         }
 
-        div[style*="overflow: auto"]::-webkit-scrollbar-thumb:hover {
-          background: rgba(255, 255, 255, 0.35);
+        .gallery-card:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        /* The Modal (background) */
+        .modal {
+          display: block;
+          position: fixed;
+          z-index: 9999;
+          padding-top: 100px;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: rgb(0,0,0);
+          background-color: rgba(0,0,0,0.9);
+        }
+
+        /* Modal Content (image) */
+        .modal-content {
+          margin: auto;
+          display: block;
+          width: 80%;
+          max-width: 700px;
+          -webkit-animation-name: zoom;
+          -webkit-animation-duration: 0.6s;
+          animation-name: zoom;
+          animation-duration: 0.6s;
+        }
+
+        /* Caption of Modal Image */
+        #caption {
+          margin: auto;
+          display: block;
+          width: 80%;
+          max-width: 700px;
+          text-align: center;
+          color: #ccc;
+          padding: 10px 0;
+          min-height: 150px;
+          -webkit-animation-name: zoom;
+          -webkit-animation-duration: 0.6s;
+          animation-name: zoom;
+          animation-duration: 0.6s;
+        }
+
+        /* Add Animation */
+        @-webkit-keyframes zoom {
+          from {-webkit-transform:scale(0)} 
+          to {-webkit-transform:scale(1)}
+        }
+
+        @keyframes zoom {
+          from {transform:scale(0)} 
+          to {transform:scale(1)}
+        }
+
+        /* The Close Button */
+        .close {
+          position: absolute;
+          top: 15px;
+          right: 35px;
+          color: #f1f1f1;
+          font-size: 40px;
+          font-weight: bold;
+          transition: 0.3s;
+          cursor: pointer;
+          z-index: 10000;
+        }
+
+        .close:hover,
+        .close:focus {
+          color: #bbb;
+          text-decoration: none;
+          cursor: pointer;
+        }
+
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 700px) {
+          .modal {
+            padding-top: 50px;
+          }
+
+          .modal-content {
+            width: 100%;
+          }
+
+          .close {
+            top: 10px;
+            right: 20px;
+            font-size: 30px;
+          }
+
+          #caption {
+            font-size: 0.875rem;
+            padding: 8px;
+          }
         }
       `}</style>
     </>
