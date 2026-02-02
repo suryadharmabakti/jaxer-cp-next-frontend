@@ -19,8 +19,8 @@ export default function GalleryPage() {
     { src: "/img/puspeka.jpg", title: "Audiensi dengan Puspeka", desc: "Audiensi bersama PUSPEKA mengenai program dan dukungan." },
     { src: "/img/mal.jpeg", title: "Opening Qrupi Malang", desc: "Peluncuran Qrupi di Malang bersama para stakeholder." },
     { src: "/img/malang.jpg", title: "TOT Malang", desc: "Training of Trainers di Malang untuk peningkatan kapasitas." },
-    { src: "/img/Artboard 1.svg", title: "Brand Artwork", desc: "Desain visual identitas brand Qrupi." },
-    { src: "/img/calendar.svg", title: "Planning", desc: "Perencanaan program dan kegiatan tahunan." },
+    { src: "/img/Sosialisasi.jpeg", title: "TOT Malang", desc: "Training of Trainers di Malang untuk peningkatan kapasitas." },
+    { src: "/img/dar.jpeg", title: "Audiensi dengan Puspeka", desc: "Audiensi bersama PUSPEKA mengenai program dan dukungan." },
   ];
 
   // Auto-slide every 5 seconds

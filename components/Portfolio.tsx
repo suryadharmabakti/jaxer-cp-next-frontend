@@ -38,10 +38,10 @@ export default function Portfolio() {
             <h3 className="text-2xl font-bold text-gray-800 mb-4">QRUPI</h3>
             <div className="flex justify-center gap-2 mb-4">
               <span className="border border-blue-600 text-blue-600 px-2 py-0.5 rounded-full text-xs">
-                FinTech
+                Digitalisasi
               </span>
               <span className="border border-blue-600 text-blue-600 px-2 py-0.5 rounded-full text-xs">
-                Payments
+                7 KAIH
               </span>
             </div>
             <p className="text-gray-600 mb-6 text-justify">
@@ -115,10 +115,10 @@ export default function Portfolio() {
             <h3 className="text-2xl font-bold text-blue mb-4">JAROLIVA</h3>
             <div className="flex justify-center gap-2 mb-4">
               <span className="border border-blue-600 text-blue-600 px-2 py-0.5 rounded-full text-xs">
-                Food & Beverage
+                Olive Oil
               </span>
               <span className="border border-blue-600 text-blue-600 px-2 py-0.5 rounded-full text-xs">
-                Premium
+                Health and Beauty
               </span>
             </div>
             <p className="text-gray-600 mb-6 text-justify">
