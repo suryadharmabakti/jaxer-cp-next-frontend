@@ -35,7 +35,7 @@ export default function Hero() {
           />
         </div>
       </div>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white relative z-10">
+      <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 text-center text-white relative z-10">
         <h1
           data-aos="fade-up"
           className="text-5xl md:text-7xl font-bold mb-6 leading-tight"

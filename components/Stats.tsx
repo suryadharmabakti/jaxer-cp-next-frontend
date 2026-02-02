@@ -58,7 +58,7 @@ export default function Stats() {
 
   return (
     <section ref={sectionRef} className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div data-aos="fade-up" data-aos-delay="0">
             <div

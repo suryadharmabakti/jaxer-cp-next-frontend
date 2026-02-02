@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section id="about" className="py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2
             data-aos="fade-up"
@@ -36,14 +36,14 @@ export default function About() {
           </div>
           <div data-aos="fade-left">
             <h3 className="text-3xl font-bold text-gray-800 mb-6">Welcome to PT Jaxer Teknologi Indonesia</h3>
-            <p className="text-gray-600 mb-6 leading-relaxed">
+            <p className="text-gray-600 mb-6 leading-relaxed text-justify">
               We are proud to be part of Indonesia's digital transformation by delivering
               innovative, reliable, and affordable technology solutions. Driven by the
               vision to Empower Indonesia's Digital Future, we are committed to
               supporting society and the education sector through high-quality
               products designed domestically.
             </p>
-            <p className="text-gray-600 mb-8 leading-relaxed">
+            <p className="text-gray-600 mb-8 leading-relaxed text-justify">
               We believe that with the right technology, we can build a future generation
               that is more advanced and ready to face global challenges. Thank you for
               trusting PT Jaxer Group Indonesia. Together, let us create a better future!
