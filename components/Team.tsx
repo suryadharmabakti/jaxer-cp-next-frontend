@@ -117,7 +117,7 @@ export default function Team() {
               className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center bg-white border border-gray-200 shadow-md cursor-pointer"
               onClick={() =>
                 setSelected({
-                  src: "img/fuad pratama.png",
+                  src: "img/fatma.jpeg",
                   name: "Fatma Abdullah",
                   role: "Chief Financial Officer",
                   desc:
@@ -126,7 +126,7 @@ export default function Team() {
               }
             >
               <img
-                src="img/fuad pratama.png"
+                src="img/fatma.jpeg"
                 alt="Fatma Abdullah"
                 className="w-full h-full object-cover"
               />
